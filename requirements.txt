@@ -1,0 +1,7 @@
+API-KEY : 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
+
+api-endpoint : https://api.openai.com/v1/completions
+
+sudo apt-get install jq
+sudo apt-get install curl
+sudo apt install python3
