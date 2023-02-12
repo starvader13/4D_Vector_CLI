@@ -30,7 +30,7 @@ handle_option() {
     case $option in
     
     1)
-    read -p ">>> tranlate " text_translate
+    read -p ">>> translate " text_translate
     IFS='-' read -a array <<< "$text_translate"
     echo ""
 
