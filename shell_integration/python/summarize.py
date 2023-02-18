@@ -1,3 +1,3 @@
 import os
 
-os.system('cat /home/starvader/hashhacks/shell_integration/python/summarizing.txt')
+os.system('cat ../python/summarizing.txt')

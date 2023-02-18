@@ -1,3 +1,3 @@
 import os
 
-os.system('cat /home/starvader/hashhacks/shell_integration/python/translate.txt')
+os.system('cat ../python//translate.txt')

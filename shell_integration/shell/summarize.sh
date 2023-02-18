@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /home/starvader/hashhacks/shell_integration/shell/api_interaction.sh
+source ./api_interaction.sh
 
 function send_request_summarize() {
     local prompt=$1

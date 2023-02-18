@@ -1,11 +1,12 @@
 #!/bin/bash
 
 #source the file with the relative path 
-source /home/starvader/hashhacks/shell_integration/shell/summarize.sh
-source /home/starvader/hashhacks/shell_integration/shell/translate.sh
-source /home/starvader/hashhacks/shell_integration/shell/code_snippet.sh
-source /home/starvader/hashhacks/shell_integration/shell/api_interaction.sh
-source /home/starvader/hashhacks/shell_integration/shell/flag_access.sh
+
+source ./api_interaction.sh
+source ./translate.sh
+source ./code_snippet.sh
+source ./summarize.sh
+source ./flag_access.sh
 
 
 # created menu icon and fetched details regarding the version and system
@@ -94,21 +95,21 @@ main_call() {
     while true; do
 
         clear
-        python /home/starvader/hashhacks/shell_integration/python/text_integration.py
+        python ../python/text_integration.py
 
         show_menu
 
         if [[ "$option" == "1" ]]; then
             clear
-            python /home/starvader/hashhacks/shell_integration/python/translate.py
+            python ../python/translate.py
         
         elif [[ "$option" == "2" ]]; then
             clear
-            python /home/starvader/hashhacks/shell_integration/python/summarize.py
+            python ../python/summarize.py
 
         elif [[ "$option" == "3" ]]; then
             clear
-            python /home/starvader/hashhacks/shell_integration/python/code_snippet.txt
+            python ../python/code_snippet.txt
         fi
 
         if [[ "$option" == "$exit_value" ]]; then

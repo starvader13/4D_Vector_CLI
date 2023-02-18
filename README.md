@@ -1,5 +1,6 @@
 # 4D_Vector_CLI
-A cli based tool which can function as an integrated model of different functionalities including translation, summarization and code snippet creation
+
+**A cli based tool which can function as an integrated model of different functionalities including translation, summarization and code snippet creation**
 
 
 ## Installation process
@@ -12,6 +13,10 @@ cd 4D_Vector_CLI
 ```
 sudo apt install $(grep -vE "^\s*#" requirements.txt  | tr "\n" " ")
 ```
+
+## Adding user api_key
+
+
 
 ## Important:
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /home/starvader/hashhacks/shell_integration/shell/api_interaction.sh
+source ./api_interaction.sh
 
 function generate_code_snippet() {
     code_sentence=$1
