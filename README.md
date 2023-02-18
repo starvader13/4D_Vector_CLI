@@ -14,21 +14,11 @@ cd 4D_Vector_CLI
 sudo apt install $(grep -vE "^\s*#" requirements.txt  | tr "\n" " ")
 ```
 
-## Adding user api_key
-
-
-
-## Important:
-
-**Convert the path sourced in every file to your original path and it will connect automatically**
 
 ## Execution
 
 ```
-cd shell_integration
-```
-```
-cd shell
+cd 4D_Vector_CLI
 ```
 ```
 ./script.sh
