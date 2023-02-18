@@ -1,3 +1,3 @@
 import os
 
-os.system('cat ../python//translate.txt')
+os.system('cat ./shell_integration/python/translate.txt')

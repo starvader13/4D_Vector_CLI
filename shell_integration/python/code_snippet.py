@@ -1,3 +1,3 @@
 import os
 
-os.system('cat ../python/code_snippet.txt')
+os.system('cat ./shell_integration/python/code_snippet.txt')

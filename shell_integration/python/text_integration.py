@@ -10,6 +10,7 @@ def print_detail(msg, msg_type,delay):
 
 def call_detail():
     print_detail("Starting 4D-vector CLI v1.0 2023....","workflow",1)
-    os.system("cat ../python/text_integrate.txt")
+    print(os.getcwd())
+    os.system("cat ./shell_integration/python/text_integrate.txt")
 
 call_detail()

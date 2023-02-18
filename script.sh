@@ -2,11 +2,11 @@
 
 #source the file with the relative path 
 
-source ./api_interaction.sh
-source ./translate.sh
-source ./code_snippet.sh
-source ./summarize.sh
-source ./flag_access.sh
+source ./shell_integration/shell/api_interaction.sh
+source ./shell_integration/shell/translate.sh
+source ./shell_integration/shell/code_snippet.sh
+source ./shell_integration/shell/summarize.sh
+source ./shell_integration/shell/flag_access.sh
 
 
 # created menu icon and fetched details regarding the version and system
@@ -91,25 +91,26 @@ handle_option() {
     esac
 }
 
+
 main_call() {
     while true; do
 
         clear
-        python ../python/text_integration.py
+        python ./shell_integration/python/text_integration.py
 
         show_menu
 
         if [[ "$option" == "1" ]]; then
             clear
-            python ../python/translate.py
+            python ./shell_integration/python/translate.py
         
         elif [[ "$option" == "2" ]]; then
             clear
-            python ../python/summarize.py
+            python ./shell_integration/python/summarize.py
 
         elif [[ "$option" == "3" ]]; then
             clear
-            python ../python/code_snippet.txt
+            python ./shell_integration/python/code_snippet.txt
         fi
 
         if [[ "$option" == "$exit_value" ]]; then
@@ -122,5 +123,6 @@ main_call() {
 
     done
 }
+
 
 main_call

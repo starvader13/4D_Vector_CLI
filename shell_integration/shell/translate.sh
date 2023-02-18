@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./api_interaction.sh
+source ./shell_integration/shell/api_interaction.sh
 
 function send_request_translate() {
     local prompt=$1
